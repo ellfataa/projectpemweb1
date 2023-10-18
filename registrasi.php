@@ -17,8 +17,9 @@
             $nama = $_POST['nama'];
             $username = $_POST['username'];
             $password = md5($_POST['password']);
+            $level = $_POST['level'];
 
-            $sql = "INSERT INTO user (nama, username, password) VALUES ('$nama', '$username', '$password')";
+            $sql = "INSERT INTO user (nama, username, password, level) VALUES ('$nama', '$username', '$password', '$level')";
             $query = mysqli_query($conn, $sql);
 
             if($query){
@@ -47,6 +48,15 @@
             <tr>
                 <td>Password</td>
                 <td><input name="password" type="password"></td>
+            </tr>
+            <tr>
+                <td>Pilih role Anda</td>
+                <td>
+                    <select name="level">
+                        <option value="Guru">Guru</option>
+                        <option value="Siswa">Siswa</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <tr>

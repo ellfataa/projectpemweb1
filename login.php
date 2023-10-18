@@ -10,6 +10,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -51,33 +56,40 @@
             }
         }
     ?>
+    <center>
+    <ul>
+        <li class="sekul-legend">
+            <img class="logo" src="gambar/logo.svg" alt=""><br>
+            Sekul Legend
+        </li>
+    </ul> 
+    </center>
+    <div class="div1">
+        
+        <div class="form">
+            <br>
+            <h1>Sign In</h1>
+            <ul>
+                <li>Jika kamu belum mempunyai akun</li>
+                <li>Kamu dapat <a class="link-daftar" href="registrasi.php">daftar !</a></li>
+            </ul>
+            <br>
+            <form class="form-login" name="form-login" action="" method="post">
+                <div class="form-username">
+                    <label for="tulisan kecil username">username</label><br>
+                    <input class="username" name="username" type="text" placeholder="Masukkan username...">
+                </div><br>
+                <div class="form-password">
+                    <label for="tulisan kecil password">password</label><br>
+                    <input class="password" name="password" type="password" placeholder="Masukkan password...">
+                </div>
+                <button class="btn-login" type="submit">Login</button>       
+            </form>
+        </div>
 
-    <form action="" method="post">
-        <table align="center">
-            <tr>
-                <td colspan="2" align="center">
-                    <h3>Login User</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>Username</td>
-                <td><input name="username" type="text"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input name="password" type="password"></td>
-            </tr>
-            <tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <button type="submit">Login</button>
-                        <a href="registrasi.php">Daftar</a>
-                    </td>
-                </tr>
-            </tr>
-        </table>
-    </form>
-    
+        <div class="gambar-login">
+            <img src="gambar/login.svg" alt="">
+        </div>
+    </div>
 </body>
 </html>
