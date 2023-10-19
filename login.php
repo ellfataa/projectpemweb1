@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="logres.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -56,16 +56,13 @@
             }
         }
     ?>
-    <center>
-    <ul>
-        <li class="sekul-legend">
-            <img class="logo" src="gambar/logo.svg" alt=""><br>
-            Sekul Legend
-        </li>
-    </ul> 
-    </center>
+
+    <div class="div-logo">
+        <img class="logo" src="gambar/logo.svg" alt="">
+        <p>Sekul Legend</p>
+    </div>
+ 
     <div class="div1">
-        
         <div class="form">
             <br>
             <h1>Sign In</h1>
@@ -88,7 +85,7 @@
         </div>
 
         <div class="gambar-login">
-            <img src="gambar/login.svg" alt="">
+            <img src="gambar/login.svg" alt="lock-login">
         </div>
     </div>
 </body>
