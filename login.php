@@ -57,13 +57,8 @@
         }
     ?>
 
-    <div class="div-logo">
-        <img class="logo" src="gambar/logo.svg" alt="">
-        <p>Sekul Legend</p>
-    </div>
- 
     <div class="div1">
-        <div class="form">
+        <div class="form-login">
             <br>
             <h1>Sign In</h1>
             <ul>
@@ -71,7 +66,7 @@
                 <li>Kamu dapat <a class="link-daftar" href="registrasi.php">daftar !</a></li>
             </ul>
             <br>
-            <form class="form-login" name="form-login" action="" method="post">
+            <form name="form-login" action="" method="post">
                 <div class="form-username">
                     <label for="tulisan kecil username">username</label><br>
                     <input class="username" name="username" type="text" placeholder="Masukkan username...">
@@ -85,7 +80,7 @@
         </div>
 
         <div class="gambar-login">
-            <img src="gambar/login.svg" alt="lock-login">
+            <img src="gambar/logres.svg" alt="lock-login">
         </div>
     </div>
 </body>

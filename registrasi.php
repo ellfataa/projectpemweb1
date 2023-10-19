@@ -35,13 +35,8 @@
         }
     ?>
 
-    <div class="div-logo">
-            <img class="logo" src="gambar/logo.svg" alt="">
-            <p>Sekul Legend</p>
-    </div>
-
     <div class="div1">
-        <div class="form">
+        <div class="form-signup">
             <br>
             <h1>Sign Up</h1>
             <ul>
@@ -49,25 +44,36 @@
                 <li>Kamu dapat <a class="link-daftar" href="login.php">login !</a></li>
             </ul>
             <br>
-            <form class="form-login" name="form-login" action="" method="post">
+            <form name="form-login" action="" method="post">
             <div class="form-nama">
                     <label for="tulisan kecil nama">nama</label><br>
                     <input class="nama" name="nama" type="text" placeholder="Masukkan nama...">
                 </div><br>
+
                 <div class="form-username">
                     <label for="tulisan kecil username">username</label><br>
                     <input class="username" name="username" type="text" placeholder="Masukkan username...">
                 </div><br>
+
                 <div class="form-password">
                     <label for="tulisan kecil password">password</label><br>
                     <input class="password" name="password" type="password" placeholder="Masukkan password...">
                 </div>
+                
+                <div class="form-role">
+                    <label for="tulisan kecil role">pilih role Anda</label><br>
+                    <select class="role" name="level" id="level">
+                        <option value="Guru">Guru</option>
+                        <option value="Siswa">Siswa</option>
+                    </select>
+                </div>
+                
                 <button class="btn-signup" type="submit">Sign Up</button>       
             </form>
         </div>
 
         <div class="gambar-signup">
-            <img src="gambar/login.svg" alt="lock-signup">
+            <img src="gambar/logres.svg" alt="lock-signup">
         </div>
     </div>
     
