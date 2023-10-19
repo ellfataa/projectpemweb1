@@ -97,6 +97,21 @@ label {
   margin-bottom: 10px;
 }
 
+.role, option{
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  width: auto;
+  padding: 3px 3px 3px 0px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 .btn-login {
   font-family: "Poppins";
   font-size: 16px;
