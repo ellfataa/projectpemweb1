@@ -1,5 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body{
     overflow-x: hidden;
+}
+
+.sidebar{
+    display: flex;
+    align-items: center;
+    background-color: tomato;
+}
+
+.sidebar h4{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 nav {
@@ -13,18 +31,31 @@ nav ul {
     position: absolute;
     left: 0;
     flex-direction: column;
-    background-color: #ecbc76;
+    background-color: whitesmoke;
     top: 0;
     height: 100vh;
-    align-items: center;
     display: flex;
     list-style: none;
     width: 20%;
-    justify-content: space-evenly;
-    z-index: -1;
+    justify-content: none;
     transform: translateX(-100%);
     transition: all 1s;
-  }
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+nav ul li{
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    margin-left: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+}
 
 nav ul li a{
     color: black;
@@ -53,6 +84,7 @@ nav ul li a:hover{
     left: -10px;
     top: -3px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .toggle span{
@@ -67,7 +99,7 @@ nav ul li a:hover{
     margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 nav ul.slide{
@@ -87,7 +119,7 @@ nav ul.slide{
         margin-top: 3px;
         background-color: #ecbc76;
         height: 300px;
-        z-index: -3;
+        z-index: -1 -1 -1 -1;
 }
 
 .row1_2 h2{
