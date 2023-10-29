@@ -31,10 +31,23 @@
             <span></span>
         </div>
         <ul>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Kelas</a></li>
-            <li><a href="">Kalender</a></li>
-            <li><a href="">Setelan</a></li>
+        <div class="sidebar">
+            <div class="toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <h4>Sekul Legend</h4>
+            </div>
+        </div>
+        <div class="menu">
+            <li class="dash1"><a href="">Dashboard</a></li>
+            <li class="dash1"><a href="">Kelas</a></li>
+            <li class="dash1"><a href="">Kalender</a></li>
+            <li class="dash1"><a href="">Setelan</a></li>
+        </div>
         </ul>
         <div class="logo">
             <h4>Sekul Legend</h4>
@@ -52,27 +65,7 @@
             <p>Selamat Datang, <?php echo $_SESSION['user']; ?></p>
         </div>
     </div>
-
-
-    <!-- <center>
-        <div id="app">
-            <nav>
-                <ul>
-                    <li type="none">
-                        <a href="bio_admin.php">Biodata Admin</a>&nbsp;
-                        <a href="bio_guru.php">Biodata Guru</a>&nbsp;
-                        <a href="bio_siswa.php">Biodata Siswa</a>
-                    </li>
-                </ul>
-            </nav>
-        </div> 
-        <h1>Halaman Administrator</h1>
-        <a href="../index.php">Home</a>
-        <a href="../logout.php">Logout</a>
-        <br>
-        <h1>Selamat datang, <?php echo $_SESSION['user']; ?></h1>
-        Halaman setelah login
-    </center> -->
+    
     <script>
         const toggle = document.querySelector('.toggle input');
         const nav = document.querySelector('nav ul');
