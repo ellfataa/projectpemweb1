@@ -16,6 +16,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Admin</title>
     <link rel="stylesheet" href="admin.css" type="text/css">
 
@@ -32,32 +36,31 @@
             <span></span>
         </div>
         <ul>
-            <div class="sidebar">
-                <div class="toggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <p class="namalogo">Sekul Legend</p>
-
-            </div><br>
-            <div>
-                <li><a class="dash1" href="../index.php"><img src="../gambar/home.svg" alt="Home">Dashboard</a></li><br>
-                <li><a  class="dash2" href=""><img src="../gambar/kelas.svg" alt="Kelas">Kelas</a></li><br>
-                <li><a  class="dash3" href=""><img src="../gambar/kalender.svg" alt="Kalender">Kalender</a></li>
+        <div class="sidebar">
+            <div class="toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div>
+                <h4>Sekul Legend</h4>
+            </div>
+        </div>
+        <div class="menu">
+            <li class="dash1"><a href="">Dashboard</a></li>
+            <li class="dash1"><a href="">Kelas</a></li>
+            <li class="dash1"><a href="">Kalender</a></li>
+            <li class="dash1"><a href="">Setelan</a></li>
+        </div>
         </ul>
-
-        <p class="namalogo">Sekul Legend</p>
-
-        <div class="menu-header">
-            <li type="none"><a class="profil" href="bio_admin.php">Profil</a></li>
-            <li type="none"><a class="logout" href="../logout.php">Logout</a></li>
+        <div class="logo">
+            <h4>Sekul Legend</h4>
+        </div>
+        <div class="logo_profil">
+            <a href="profil.php"><img src="profil.jpg" alt="profil"/></a>
         </div>
     </nav>
-
     <div class="row1">
         <div>
             <img src="../gambar/logo.svg" width="200px" style="margin: 50px;">
