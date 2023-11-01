@@ -63,7 +63,7 @@
             <h1>Sign In</h1>
             <ul>
                 <li>Jika kamu belum mempunyai akun</li>
-                <li>Kamu dapat <a class="link-daftar" href="registrasi.php">daftar !</a></li>
+                <li>Kamu dapat <a class="link-daftar" href="registrasi.php">daftar!</a></li>
             </ul>
             <br>
             <form name="form-login" action="" method="post">

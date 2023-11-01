@@ -27,10 +27,10 @@
             $sql = "INSERT INTO user (nama, username, password, level) VALUES ('$nama', '$username', '$password', '$level')";
             $query = mysqli_query($conn, $sql);
 
-            if($query){
+            if($query > 0){
                 echo "<script>alert('Berhasil mendaftar. Silahkan login')</script>";
             }else{
-                echo "<script>alert('Gagal mendaftar')</script>";
+                echo "<script>alert('Gagal mendaftar. Harap ulangi pendaftaran')</script>";
             }
         }
     ?>
@@ -41,11 +41,11 @@
             <h1>Sign Up</h1>
             <ul>
                 <li>Jika kamu sudah mempunyai akun</li>
-                <li>Kamu dapat <a class="link-daftar" href="login.php">login !</a></li>
+                <li>Kamu dapat <a class="link-daftar" href="login.php">login!</a></li>
             </ul>
             <br>
             <form name="form-login" action="" method="post">
-            <div class="form-nama">
+                <div class="form-nama">
                     <label for="tulisan kecil nama">nama</label><br>
                     <input class="nama" name="nama" type="text" placeholder="Masukkan nama...">
                 </div><br>
