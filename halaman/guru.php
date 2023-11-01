@@ -1,4 +1,4 @@
-<?php
+ <?php
     include '../koneksi.php';
 
     //INISIALISASI SESSION
@@ -9,6 +9,14 @@
         header('Location: ../login.php');
     }
 
+    if (isset($_POST['buatkelas'])) {
+        $nama_kelas = $_POST['kelas'];
+        $kd_kelas = $_POST['kodeKelas'];
+    
+        $result = mysqli_query($koneksi, "INSERT INTO kelas(nama_kelas,kodeKelas) VALUES('$nama_kelas','$kd_kelas')");
+    
+        header("Location: admin.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +71,7 @@
             <img src="../gambar/logo.svg" width="200px" style="margin: 50px;">
         </div>
         <div class="row1_2">
-            <h2>Administrator</h2>
+            <h2>Guru</h2>
             <p class="isirow2">Selamat Datang, <?php echo $_SESSION['user']; ?></p>
         </div>
     </div>
@@ -75,12 +83,40 @@
             <input class="kelas" type="text" name="kelas" id="kelas" />
             <br />
             
-            <input class="submit" type="submit" value="Buat Kelas" id="buatKelas" />
+            <input class="submit" type="submit" name="submit" value="Buat Kelas" id="buatKelas" />
             <br />
-
-            <p id="kodeKelas"></p>
+            <input type="text" name="kd_kelas"  value="<?php echo $_POST['kodeKelas'] ?>" />
+            <p id="kodeKelas" name="kodeKelas"></p>
         </form>
     </div>
+    <?php /*
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $classroom_name = $_POST["kelas"];
+            $classroom_id = $_POST["kodeKelas"];
+           
+            $sql = "INSERT INTO classrooms (classroom_name, classroom_id) VALUES ('$classroom_name', '$classroom_id')";
+           
+            if ($conn->query($sql) === TRUE) {
+               echo "Classroom created successfully!";
+            } else {
+               echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+           }
+           $sql = "SELECT kelas, kodeKelas FROM classrooms";
+            
+           $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+            echo "<table><tr><th>Classroom Name</th><th>Classroom ID</th></tr>";
+            while($row = $result->fetch_assoc()) {
+                echo "<tr><td>" . $row["kelas"]. "</td><td>" . $row["kodeKelas"]. "</td></tr>";
+            }
+            echo "</table>";
+            } else {
+            echo "0 results";
+            }
+            $conn->close(); */
+    ?>
     
     <script>
         const toggle = document.querySelector('.toggle input');
